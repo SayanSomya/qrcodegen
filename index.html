@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="sayan.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/d18d22a038.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar-container">
+        <div class="logo-container">
+          <img
+            class="logo-image1"
+            src="https://www.macworld.com/wp-content/uploads/2023/01/thinkstock-qr-code-100725734-orig.jpg?quality=50&strip=all"
+            alt="swc_logo"
+          />
+          <h1 class="logo">Qr Code Generator</h1>
+        </div>
+
+        <div class="profile-container">
+          <img class="profile-picture" src="sayan.png" alt="profile_picture" />
+          <div class="profile-text-container">
+            <button onclick="myFunction()" class="dropbtn">
+              <span class="profile-text">Sayan </span
+              ><i class="fas fa-caret-down"></i>
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">Profile</a>
+              <a href="#">Login</a>
+              <a href="#">LogOut</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid">
+      <img src="" id="img" />
+
+      <select id="size">
+        <option value="100">100x100</option>
+        <option value="150">150x150</option>
+        <option value="200">200x200</option>
+        <option value="250" selected>250x250</option>
+        <option value="300">300x300</option>
+      </select>
+      <br /><br />
+
+      <textarea placeholder="Enter Your Text" id="qrtext"></textarea>
+      <br /><br />
+      <input type="submit" value="Generate" onclick="genQR()" />
+      <footer>
+        <p class="bottom">
+          Developed By <span>Sayan Somya</span> using Udemy course
+        </p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
